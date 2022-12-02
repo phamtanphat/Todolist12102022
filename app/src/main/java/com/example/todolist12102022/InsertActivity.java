@@ -25,10 +25,17 @@ public class InsertActivity extends AppCompatActivity {
 //        }
 
         // 2: ArrayList
+//        Intent intent = getIntent();
+//        if (intent != null) {
+//            ArrayList<String> arrStrings = (ArrayList<String>) intent.getSerializableExtra("arrayList");
+//            Log.d("BBB", arrStrings.size()  + "");
+//        }
+
+        // 3: Object
         Intent intent = getIntent();
         if (intent != null) {
-            ArrayList<String> arrStrings = (ArrayList<String>) intent.getSerializableExtra("arrayList");
-            Log.d("BBB", arrStrings.size()  + "");
+            Person person = intent.getParcelableExtra("person");
+            Log.d("BBB", person.name);
         }
     }
 }
