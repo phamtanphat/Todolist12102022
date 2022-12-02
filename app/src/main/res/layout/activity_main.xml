@@ -15,8 +15,14 @@
         android:text="Intent String" />
 
     <Button
-        android:id="@+id/button_intent_array_list_string"
+        android:id="@+id/button_intent_serializable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Intent Array List String" />
+        android:text="Intent Serializable" />
+
+    <Button
+        android:id="@+id/button_intent_parcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Parcelable" />
 </LinearLayout>
