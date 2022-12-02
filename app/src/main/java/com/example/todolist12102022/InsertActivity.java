@@ -16,26 +16,5 @@ public class InsertActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
 
-        // 1: String
-//        Intent intent = getIntent();
-//        if (intent != null) {
-//            String title = intent.getStringExtra("title");
-//            String message = intent.getStringExtra("message");
-//            Log.d("BBB", title + "\n" + message);
-//        }
-
-        // 2: ArrayList
-//        Intent intent = getIntent();
-//        if (intent != null) {
-//            ArrayList<String> arrStrings = (ArrayList<String>) intent.getSerializableExtra("arrayList");
-//            Log.d("BBB", arrStrings.size()  + "");
-//        }
-
-        // 3: Object
-        Intent intent = getIntent();
-        if (intent != null) {
-            Person person = intent.getParcelableExtra("person");
-            Log.d("BBB", person.name);
-        }
     }
 }
